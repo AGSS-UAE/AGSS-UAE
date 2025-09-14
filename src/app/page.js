@@ -1,16 +1,19 @@
 "use client";
 
-// import Car from "./components/Car";
-// import Details from "./components/Details";
-// import Footer from "./components/Footer";
-// import Homepage from "./components/Homepage";
-// import Services from "./components/Services";
-// import Homepage2 from "./Homepage2";
-
 export default function Page() {
   return (
-    <div>
-      <span>Comming Soon</span>
+    <div style={{ background: "#f1f1f1" }}>
+      <img
+        src="/assets/commingSoon.jpeg"
+        alt="Banner"
+        style={{
+          height: "100vh", // full viewport height
+          width: "100vw", // full viewport width
+          objectFit: "contain", // scale image to cover container without distortion
+          objectPosition: "center", // center the image
+          display: "block", // remove inline spacing below image
+        }}
+      />
     </div>
   );
 }
